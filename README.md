@@ -15,7 +15,8 @@ For this project, we sourced Computer-Science related Question-Answer data from 
 4. [Kaggle - Computer Science Theory QA Dataset (Matin, n.d.)](https://www.kaggle.com/datasets/mujtabamatin/computer-science-theory-qa-dataset)
 
 **To run:**
-1. Run preprocessing.ipynb to preprocess dataset (cleaned dataset: combined_data.csv)
+1. Run preprocessing.ipynb to preprocess dataset (cleaned dataset generated: combined_data.csv)
+   - Required Files: final1.txt, intents.json, SoftwareQuestions.csv
 2. Run 'LSTM-LSTM_training.ipynb' to train RNN model
 3. Run 'DistilRoberta-LSTM_training.ipynb' to train Hybrid model
 4. Run 'GPT2_Training.ipynb' to train Transformer model
