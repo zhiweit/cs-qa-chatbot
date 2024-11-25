@@ -9,7 +9,7 @@ In this project, we will be experimenting with 3 different approaches: **LSTM-LS
 
 **Datasets:**
 For this project, we sourced Computer-Science related Question-Answer data from 4 origins:
-1. [Github repository by Kunal Kumar (Kunal, n.d.)](https://www.aimodels.fyi/models/huggingFace/distilroberta-base-distilbert)
+1. [Github repository by Kunal Kumar (Kunal, n.d.)](https://github.com/kunal164107/Interview-Chatbot/blob/master/data/twitter/final1.txt)
 2. [Hugging Face - data-science-qa (Team Bay, n.d.)](https://huggingface.co/datasets/team-bay/data-science-qa)
 3. [Kaggle - Software Engineering Interview Questions Dataset (Syed, n.d.)](https://www.kaggle.com/datasets/syedmharis/software-engineering-interview-questions-dataset)
 4. [Kaggle - Computer Science Theory QA Dataset (Matin, n.d.)](https://www.kaggle.com/datasets/mujtabamatin/computer-science-theory-qa-dataset)
