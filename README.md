@@ -9,10 +9,10 @@ In this project, we will be experimenting with 3 different approaches: **LSTM-LS
 
 **Datasets:**
 For this project, we sourced Computer-Science related Question-Answer data from 4 origins:
-[Github repository by Kunal Kumar (Kunal, n.d.)](https://www.aimodels.fyi/models/huggingFace/distilroberta-base-distilbert)
-[Hugging Face - data-science-qa (Team Bay, n.d.)](https://huggingface.co/datasets/team-bay/data-science-qa)
-[Kaggle - Software Engineering Interview Questions Dataset (Syed, n.d.)](https://www.kaggle.com/datasets/syedmharis/software-engineering-interview-questions-dataset)
-[Kaggle - Computer Science Theory QA Dataset (Matin, n.d.)](https://www.kaggle.com/datasets/mujtabamatin/computer-science-theory-qa-dataset)
+1. [Github repository by Kunal Kumar (Kunal, n.d.)](https://www.aimodels.fyi/models/huggingFace/distilroberta-base-distilbert)
+2. [Hugging Face - data-science-qa (Team Bay, n.d.)](https://huggingface.co/datasets/team-bay/data-science-qa)
+3. [Kaggle - Software Engineering Interview Questions Dataset (Syed, n.d.)](https://www.kaggle.com/datasets/syedmharis/software-engineering-interview-questions-dataset)
+4. [Kaggle - Computer Science Theory QA Dataset (Matin, n.d.)](https://www.kaggle.com/datasets/mujtabamatin/computer-science-theory-qa-dataset)
 
 **To run:**
 1. Run preprocessing.ipynb to preprocess dataset
