@@ -14,10 +14,96 @@ For this project, we sourced Computer-Science related Question-Answer data from 
 3. [Kaggle - Software Engineering Interview Questions Dataset (Syed, n.d.)](https://www.kaggle.com/datasets/syedmharis/software-engineering-interview-questions-dataset)
 4. [Kaggle - Computer Science Theory QA Dataset (Matin, n.d.)](https://www.kaggle.com/datasets/mujtabamatin/computer-science-theory-qa-dataset)
 
-**To run:**
-1. Run preprocessing.ipynb to preprocess dataset (cleaned dataset generated: combined_data.csv)
-   - Required Files: final1.txt, intents.json, SoftwareQuestions.csv
+
+## Implementation Overview
+### Architectures
+
+1. **LSTM-LSTM RNN Architecture**:
+   - A traditional sequence-to-sequence approach with Luong Attention to improve response coherence.
+
+2. **DistilRoberta-LSTM Hybrid Architecture**:
+   - Combines DistilRoberta for contextual embeddings with LSTM for sequential decoding.
+   - Features a fine-tuned encoder with Luong Attention for dynamic focus on inputs.
+
+3. **GPT-2 Transformer Architecture**:
+   - A fully Transformer-based model with self-attention mechanisms for robust language understanding and generation.
+
+
+## How to Run the Project
+### Preprocessing
+1. Run `preprocessing.ipynb` to clean and unify the dataset into a CSV file (`combined_data.csv`).
+   - **Required Files**: `final1.txt`, `intents.json`, `SoftwareQuestions.csv`
+### Training
 2. Run 'LSTM-LSTM_training.ipynb' to train RNN model
 3. Run 'DistilRoberta-LSTM_training.ipynb' to train Hybrid model
 4. Run 'GPT2_Training.ipynb' to train Transformer model
-5. Run 'TelegramHosting.py' to host on Telegram - Syahmim pls help to update
+### Hosting on Telegram  
+5. Deploy the chatbot on Telegram:
+   - Each `.ipynb` file (`LSTM-LSTM_training.ipynb`, `DistilRoberta-LSTM_training.ipynb`, `GPT2_Training.ipynb`) includes a Telegram hosting block of code at the end.  
+   - To deploy the chatbot, simply run the Telegram block, ensuring you replace `YOUR_TOKEN` with the API token obtained from BotFather on Telegram.  
+   - This block integrates the trained model with a Telegram bot, allowing real-time interaction with users.
+---
+
+## Performance Evaluation
+
+### Evaluation Metrics
+- **BERTScore**: Measures semantic similarity between responses and ground truth.
+- **BLEU**: Evaluates precision of n-grams in generated responses.
+- **ROUGE**: Assesses overlap of unigrams and sequences between generated and reference answers.
+
+### Key Findings
+
+#### LSTM-LSTM Model
+- **BERTScore**: 0.77  
+- **BLEU**: 0.75  
+- **ROUGE-1**: 0.84  
+- **ROUGE-L**: 0.82  
+
+#### DistilRoberta-LSTM Hybrid
+- **BERTScore**: 0.90  
+- **BLEU**: 0.16  
+- **ROUGE-1**: 0.32  
+- **ROUGE-L**: 0.28  
+
+#### GPT-2 Transformer
+- **BERTScore**: 0.87  
+- **BLEU**: 0.18  
+- **ROUGE-1**: 0.39  
+- **ROUGE-L**: 0.34  
+
+### Observations
+- **GPT-2 Transformer** performed best for generating coherent and semantically meaningful answers.
+- **DistilRoberta-LSTM Hybrid** excelled in contextual understanding but required improvement in lexical similarity (lower BLEU scores).
+- **LSTM-LSTM RNN** provided satisfactory results but lacked the sophistication of transformer-based architectures.
+
+---
+
+## Future Improvements
+
+- **Advanced Inference Techniques**:
+  - Implement Beam Search to enhance response coherence.
+- **Parameter Optimisation**:
+  - Use Grid Search for fine-tuning hyperparameters.
+- **Fallback Mechanisms**:
+  - Integrate BERTScore for real-time similarity checks and provide alternative resources for low-confidence responses.
+- **Dataset Expansion**:
+  - Include diverse interview topics beyond computer science, such as behavioural questions and case studies.
+
+---
+
+## Contributors
+
+- **Bryan Chua Jiaheng** (01429656)  
+- **Leck Yan Qing Elvy** (01464135)  
+- **Syahmim Chukhan Bin Shamsudin** (01422395)  
+- **Thean Zhi Wei** (01386973)  
+
+---
+
+## Academic Context
+
+**Course**: CS425: Natural Language Communication  
+**Instructor**: Dr. Wei Gao  
+**Institution**: Singapore Management University, AY 2024-2025 T1  
+
+---
