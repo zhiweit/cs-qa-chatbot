@@ -78,7 +78,7 @@ Note: Instructions on how to run the models are included in the notebooks, Eg.
 
 ### Observations
 - **GPT-2 Transformer** performed best for generating coherent and semantically meaningful answers.
-- **DistilRoberta-LSTM Hybrid** excelled in contextual understanding but required improvement in lexical similarity (lower BLEU scores).
+- **DistilRoberta-LSTM Hybrid** excelled in contextual understanding, and had the highest BERTScore.
 - **LSTM-LSTM RNN** provided satisfactory results but lacked the sophistication of transformer-based architectures.
 
 ---
