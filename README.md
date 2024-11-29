@@ -37,10 +37,15 @@ For this project, we sourced Computer-Science related Question-Answer data from 
 2. Run 'LSTM-LSTM_training.ipynb' to train RNN model
 3. Run 'DistilRoberta-LSTM_training.ipynb' to train Hybrid model
 4. Run 'GPT2_Training.ipynb' to train Transformer model
+
+Note: Instructions on how to run the models are included in the notebooks, Eg.
+![Screenshot 2024-11-29 at 5 15 13 PM](https://github.com/user-attachments/assets/72501499-3c1b-41f7-9448-7dd0143ec024)
+
 ### Hosting on Telegram  
 5. Deploy the chatbot on Telegram:
    - Each `.ipynb` file (`LSTM-LSTM_training.ipynb`, `DistilRoberta-LSTM_training.ipynb`, `GPT2_Training.ipynb`) includes a Telegram hosting block of code at the end.  
-   - To deploy the chatbot, simply run the Telegram block, ensuring you replace `YOUR_TOKEN` with the API token obtained from BotFather on Telegram.  
+   - To deploy the chatbot, simply run the Telegram block, ensuring you replace `YOUR_TOKEN` with the API token obtained from BotFather on Telegram.
+   - To get Token: Search for @BotFather on Telegram and Start a Chart. Type /newbot and follow the instructions to name your bot and set a username (it must end with "bot", e.g., my_test_bot). Thereafter, BotFather would provide the API token
    - This block integrates the trained model with a Telegram bot, allowing real-time interaction with users.
 ---
 
@@ -60,10 +65,10 @@ For this project, we sourced Computer-Science related Question-Answer data from 
 - **ROUGE-L**: 0.82  
 
 #### DistilRoberta-LSTM Hybrid
-- **BERTScore**: 0.90  
-- **BLEU**: 0.16  
-- **ROUGE-1**: 0.32  
-- **ROUGE-L**: 0.28  
+- **BERTScore**: 0.97  
+- **BLEU**: 0.71  
+- **ROUGE-1**: 0.79  
+- **ROUGE-L**: 0.77  
 
 #### GPT-2 Transformer
 - **BERTScore**: 0.87  
