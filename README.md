@@ -59,7 +59,7 @@ Note: Instructions on how to run the models are included in the notebooks, Eg.
 ### Key Findings
 
 #### LSTM-LSTM Model
-- **BERTScore**: 0.77  
+- **BERTScore**: 0.95  
 - **BLEU**: 0.75  
 - **ROUGE-1**: 0.84  
 - **ROUGE-L**: 0.82  
@@ -73,13 +73,13 @@ Note: Instructions on how to run the models are included in the notebooks, Eg.
 #### GPT-2 Transformer
 - **BERTScore**: 0.87  
 - **BLEU**: 0.18  
-- **ROUGE-1**: 0.39  
+- **ROUGE-1**: 0.38  
 - **ROUGE-L**: 0.34  
 
 ### Observations
-- **GPT-2 Transformer** performed best for generating coherent and semantically meaningful answers.
+- **GPT-2 Transformer** performed well in generating coherent and semantically meaningful answers.
 - **DistilRoberta-LSTM Hybrid** excelled in contextual understanding, and had the highest BERTScore.
-- **LSTM-LSTM RNN** provided satisfactory results but lacked the sophistication of transformer-based architectures.
+- **LSTM-LSTM RNN** provided satisfactory results but sometimes lacked depth/relevance to the question.
 
 ---
 
