@@ -1,12 +1,17 @@
-# CSInterviewChatbot
+# Computer Science Question Answering (CS QA) Chatbot
 
-Computer Science Interview Chatbot to help you ace your technical interviews!
+The primary goal is to develop a chatbot that answers computer science related questions.
 
-The primary goal is to develop a Telegram chatbot designed to assist users in preparing for technical interviews. This user-friendly platform will allow candidates to ask computer science-related questions and receive relevant, real-time answers. By leveraging the accessibility and convenience of Telegram, our chatbot will provide an interactive and immediate resource, enhancing users’ preparation and confidence.
+## Demo
+Telegram deployment on model using LSTM architecture with dot product attention mechanism.
 
-To achieve this, we will be leveraging a sequence-to-sequence (Seq2Seq) approach for the chatbot’s architecture. By employing this approach, we aim to develop a chatbot that can provide coherent and relevant responses, making it a valuable tool to help candidates prepare for technical interviews.
 
-In this project, we will be experimenting with 3 different approaches: **LSTM-LSTM RNN Architecture**, **DistilRoberta-LSTM Hybrid Architecture** and **GPT-2 Transformer Architecture**.
+https://github.com/user-attachments/assets/53e6e95c-1511-4718-85b5-ce038754103f
+
+
+
+
+Three different approaches were tried to develop this chatbot: **LSTM-LSTM RNN Architecture**, **DistilRoberta-LSTM Hybrid Architecture** and **GPT-2 Transformer Architecture**.
 
 **Datasets:**
 For this project, we sourced Computer-Science related Question-Answer data from 4 origins:
